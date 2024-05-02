@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/espinho.ico">
+</head>
+<body class="bg-teal-600">
+
+ 
+
+    <div class="bg-amber-400 flex justify-center">
+       
+      
+        <h1 class="bg-amber-400 pt-6 flex justify-center text-3xl font-bold underline ">Bem vindo ao Portfólio pessoal de João</h1>
+       <a href="https://www.linkedin.com/in/joão-barros-9681a4276/"><img class="hover:px-3 hover:bg-violet-600 size-20 bg-amber-400 
+        pt-6 text-center relative z-10"
+         src="/linkedin-logo.png" alt="logo-linkedin">
+       </a>
+
+       <a href="https://github.com/JoaoGuatura">
+       <img class="hover:px-3 hover:bg-violet-600 size-20 bg-amber-400 pt-6 text-center relative z-10" 
+       src="/githublogo.png" alt="logo-github">
+
+    </a>
+    </div>
+
+    <h2 class="bg-amber-500	pt-4 flex justify-center text-3x font-bold underline">Conheça um pouco sobre mim, aluno da faculdade 
+        Unicesumar e estudante em Engenharia de Software</h2>
+
+<div class="flex items-center justify-center">
+  
+    <img class="rounded-full w-96 h-96 size-64 p-10 hover:py-8 " src="/joaoguaturaestanho.jpg" alt="Foto Pessoal">
+
+    <div class="ml-4 font-mono text-lg">
+        <h1>Nome Completo: João Barros Guatura da Costa</h1>
+        <h1>Idade: 19 anos</h1>
+        <h1>Nascimento: Novembro de 2004</h1>
+        <h1>Hobbies: Games e Boxe</h1>
+    </div>
+</div>
+
+<div class="flex justify-center font-bold underline pb-5">
+<button class="hover:text-orange-500 " onclick="abrirCard('card')">Capacidades</button>
+</div>
+
+<div id="card" class="card hidden bg-orange-600 text-3x font-bold">
+    <div class="card-content">
+        <span class="fechar" onclick="fecharCard('card')">&times;</span>
+        <h1 class="text-3xl">Capacidades</h1>
+        <h2 class="pt-4">Formação em inglês na Wiseup (2015-2018)</h2>
+        <p>Linguagens de computação: C++, Java, SQL, HTML, CSS, PHP e JavaScript</p>
+    </div>
+</div>
+
+<div class="container" id="container">
+    
+    <div class="flex justify-center text-3xl font-bold underline pt-10 mb-3">Projetos Pessoais</div>
+
+    <div class="navigation" id="navigation"> 
+        <div class="scrollable ml-24" id="scrollable">
+            
+            <div class="item"> <img class="w-full h-full cursor-pointer" src="/projetoCLubPenguin.png"  alt="Club Penguin" onclick="abrirCard('card2')"></div>
+            <div class="item"> <img class="w-full h-full cursor-pointer" src="/imagemStudeo.png"  alt="Studeo 2" onclick="abrirCard('card3')"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/artigo.png"  alt="artigo" onclick="abrirCard('card4')"></div>
+            <div class="item"> <img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+            <div class="item"><img class="w-full h-full cursor-pointer" src="/aindaCriacao.png"  alt="EmCriacao"></div>
+    
+        </div>
+    </div>
+</div>
+
+<div id="card2" class="card hidden">
+    <span class="fechar" onclick="fecharCard('card2')">&times;</span>
+    <img src="/giphy.gif" alt="GifClubPenguin">
+    
+    Projeto de site visando copiar a tela de login do famoso site de jogos infantil Club Penguin que fez parte de minha infância,
+     com ele tive meu primeiro contato com CSS, JavaScript e HTML, projeto divertido de fazer onde criei botões de trocar a cor do 
+     pinguim ao toque.
+     <br>
+     <a href="https://github.com/JoaoGuatura/Club-Penguin-Site" class="text-blue-500 hover:underline">Repositório GitHub Club Penguin</a> 
+</div>
+
+<div id="card3" class="card hidden relative bg-red-500">
+    <span class="fechar absolute top-0 right-0 p-2 cursor-pointer size-64" onclick="fecharCard('card3')">&times;</span>
+    <img class="max-w-full mx-auto mt-3" src="/studeo2.gif" alt="GifStudeo">
+    
+
+    <div class="text-center mt-8">
+Trabalho feito em grupo, visando criar um sistema de gestão de notas, que recebe nome, email e registro de aluno e é capaz de receber 
+notas e calculá-las para descobrir a média bimestral.
+<br>
+<a href="https://github.com/JoaoGuatura/SistemaGestaoNotas" class="text-blue-500 hover:underline">Repositório GitHub Sistema Gestão de Notas</a> 
+</div>
+</div>
+
+<div id="card4" class="card hidden">
+    <span class="fechar" onclick="fecharCard('card4')">&times;</span>
+    
+    Artigo feito em grupo sobre o tema computação em nuvem, se aprofundando bastante sobre temas como a repatriação da nuvem e inteligência
+    artificial.
+     <br>
+     <a href="https://github.com/JoaoGuatura/Artigo-Computacao-em-Nuvem" class="text-blue-500 hover:underline">Repositório GitHub Artigo Nuvem</a> 
+</div>
+
+<script src="main.js"></script>
+</body>
+
+<footer class="bg-amber-400">
+    <div>Site feito por mim, usando apenas HTML, CSS e JavaScript puro, usando apenas Tailwind como auxiliar.</div>
+
+</footer>
+</html>
